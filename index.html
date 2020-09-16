@@ -92,7 +92,8 @@
 
       .red-panda img {
         display: block;
-        max-width: 100%;
+        max-width: 100%;  
+      
       }
     </style>
   </head>
@@ -123,21 +124,42 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+        <img srcset="firefox-logo-120px.png 120w, 
+          firefox-logo-400px.png 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="firefox-logo-400px.png"
+          alt="the firefox logo">  
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
-        </a>
+          <img scrset="mozilla-dinosaur-head-120px.png 120w, 
+          mozilla-dinosaur-head-400px.png"
+                sizes="(max-width: 500px) 120px, 400px"
+                src="mozilla-dinosaur-head-400px.png"
+                alt="the dinosaur">
+         
+        
+          </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="firefox-addons-120px.jpg 120w, 
+                      firefox-addons-400px.jpg 400w"
+                sizes="(max-width: 500px) 120px, 400px"
+                src="firefox-addons-400px.jpg"
+                alt="firefx addon symbol" >
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
-        </a>
+          <img src="lion-face.svg" 
+                alt="the lion face symbol">
+        </a>S
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
+        <picture>
+          <source media="(max-width:600px)" srcset="red-panda.600px.jpg">
+          <img src="images/red-panda.jpg" alt="The panda should change">
+        </picture>
+       
+       
         <!-- insert picture element -->
       </div>
 
